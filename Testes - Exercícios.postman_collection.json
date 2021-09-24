@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "ba418370-7632-4b0a-b8b2-ffd65c83a1ba",
+		"name": "Testes - Exercícios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Bebida",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Gatorade Melancia & Melão\",\r\n    \"descricao\": \"Isotonico sabor melancia com melão.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51044/api/marcas/738ab439-da32-4ac5-9fc1-d614ecb0a3a5/bebidas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas",
+						"738ab439-da32-4ac5-9fc1-d614ecb0a3a5",
+						"bebidas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Marca",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:51044/api/marcas/738ab439-da32-4ac5-9fc1-d614ecb0a3a5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas",
+						"738ab439-da32-4ac5-9fc1-d614ecb0a3a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Bebidas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51044/api/marcas/738ab439-da32-4ac5-9fc1-d614ecb0a3a5/bebidas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas",
+						"738ab439-da32-4ac5-9fc1-d614ecb0a3a5",
+						"bebidas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Bebidas",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"op\": \"replace\",\r\n    \"path\": \"/nome\",\r\n    \"value\": \"Gatorade Maracujá, Abacaxi & Limão\"\r\n    },\r\n    {\r\n      \"op\": \"replace\",\r\n      \"path\": \"/descricao\",\r\n      \"value\": \"Isotonico sabor maracujá com abacaxi e limão .\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51044/api/marcas/738ab439-da32-4ac5-9fc1-d614ecb0a3a5/bebidas/ad005f9d-a407-4015-a07b-78242a9d0a25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas",
+						"738ab439-da32-4ac5-9fc1-d614ecb0a3a5",
+						"bebidas",
+						"ad005f9d-a407-4015-a07b-78242a9d0a25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Bebidas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Gatorade Maracujá & Abacaxi\",\r\n    \"descricao\": \"Isotonico sabor maracujá com abacaxi.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51044/api/marcas/738ab439-da32-4ac5-9fc1-d614ecb0a3a5/bebidas/ad005f9d-a407-4015-a07b-78242a9d0a25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas",
+						"738ab439-da32-4ac5-9fc1-d614ecb0a3a5",
+						"bebidas",
+						"ad005f9d-a407-4015-a07b-78242a9d0a25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Marcas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51044/api/marcas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Marca",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Brahma\",\r\n    \"industria\": \"Ambev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51044/api/marcas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Marca",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:51044/api/marcas/045b6f1f-6671-4e41-b478-dd2dce11a4a0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51044",
+					"path": [
+						"api",
+						"marcas",
+						"045b6f1f-6671-4e41-b478-dd2dce11a4a0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
